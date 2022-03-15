@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      26 min read
+      22 min read
     
 </span></p>
 
@@ -467,16 +467,157 @@ Additionally, I may consider using the Spotify API to collect more data on each 
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-fg">/tmp/ipykernel_1183/4215135063.py</span> in <span class="ansi-cyan-fg">&lt;module&gt;</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> <span class="ansi-red-fg">#hide</span>
-<span class="ansi-green-fg">----&gt; 2</span><span class="ansi-red-fg"> </span>spotify2000_df<span class="ansi-blue-fg">.</span>describe<span class="ansi-blue-fg">(</span><span class="ansi-blue-fg">)</span>
 
-<span class="ansi-red-fg">NameError</span>: name &#39;spotify2000_df&#39; is not defined</pre>
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Index</th>
+      <th>Year</th>
+      <th>Beats Per Minute (BPM)</th>
+      <th>Energy</th>
+      <th>Danceability</th>
+      <th>Loudness (dB)</th>
+      <th>Liveness</th>
+      <th>Valence</th>
+      <th>Acousticness</th>
+      <th>Speechiness</th>
+      <th>Popularity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>1994.000000</td>
+      <td>1994.000000</td>
+      <td>1994.000000</td>
+      <td>1994.000000</td>
+      <td>1994.000000</td>
+      <td>1994.000000</td>
+      <td>1994.000000</td>
+      <td>1994.000000</td>
+      <td>1994.000000</td>
+      <td>1994.000000</td>
+      <td>1994.00000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>997.500000</td>
+      <td>1992.992979</td>
+      <td>120.215647</td>
+      <td>59.679539</td>
+      <td>53.238215</td>
+      <td>-9.008526</td>
+      <td>19.012036</td>
+      <td>49.408726</td>
+      <td>28.858074</td>
+      <td>4.994985</td>
+      <td>59.52658</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>575.762538</td>
+      <td>16.116048</td>
+      <td>28.028096</td>
+      <td>22.154322</td>
+      <td>15.351507</td>
+      <td>3.647876</td>
+      <td>16.727378</td>
+      <td>24.858212</td>
+      <td>29.011986</td>
+      <td>4.401566</td>
+      <td>14.35160</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>1.000000</td>
+      <td>1956.000000</td>
+      <td>37.000000</td>
+      <td>3.000000</td>
+      <td>10.000000</td>
+      <td>-27.000000</td>
+      <td>2.000000</td>
+      <td>3.000000</td>
+      <td>0.000000</td>
+      <td>2.000000</td>
+      <td>11.00000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>499.250000</td>
+      <td>1979.000000</td>
+      <td>99.000000</td>
+      <td>42.000000</td>
+      <td>43.000000</td>
+      <td>-11.000000</td>
+      <td>9.000000</td>
+      <td>29.000000</td>
+      <td>3.000000</td>
+      <td>3.000000</td>
+      <td>49.25000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>997.500000</td>
+      <td>1993.000000</td>
+      <td>119.000000</td>
+      <td>61.000000</td>
+      <td>53.000000</td>
+      <td>-8.000000</td>
+      <td>12.000000</td>
+      <td>47.000000</td>
+      <td>18.000000</td>
+      <td>4.000000</td>
+      <td>62.00000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>1495.750000</td>
+      <td>2007.000000</td>
+      <td>136.000000</td>
+      <td>78.000000</td>
+      <td>64.000000</td>
+      <td>-6.000000</td>
+      <td>23.000000</td>
+      <td>69.750000</td>
+      <td>50.000000</td>
+      <td>5.000000</td>
+      <td>71.00000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>1994.000000</td>
+      <td>2019.000000</td>
+      <td>206.000000</td>
+      <td>100.000000</td>
+      <td>96.000000</td>
+      <td>-2.000000</td>
+      <td>99.000000</td>
+      <td>99.000000</td>
+      <td>99.000000</td>
+      <td>55.000000</td>
+      <td>100.00000</td>
+    </tr>
+  </tbody>
+</table>
 </div>
+</div>
+
 </div>
 
 </div>
@@ -567,16 +708,6 @@ Additionally, I may consider using the Spotify API to collect more data on each 
 
 <div class="output_wrapper">
 <div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>Text(0.5, 1.0, &#39;Top Genre Frequency in Dataset&#39;)</pre>
-</div>
-
-</div>
 
 <div class="output_area">
 
@@ -788,31 +919,6 @@ Additionally, I may consider using the Spotify API to collect more data on each 
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">top_artists</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">spotify2000_df</span><span class="p">[</span><span class="s1">&#39;Artist&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[</span><span class="n">spotify2000_df</span><span class="p">[</span><span class="s1">&#39;Artist&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">)</span>
-<span class="n">top_artists_values</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">spotify2000_df</span><span class="p">[</span><span class="s1">&#39;Artist&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[</span><span class="n">spotify2000_df</span><span class="p">[</span><span class="s1">&#39;Artist&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">)</span>
-<span class="c1"># print(spotify2000_df[&#39;Artist&#39;].value_counts()[spotify2000_df[&#39;Artist&#39;].value_counts() &gt;= 10])</span>
-<span class="n">arist_bar_plot</span> <span class="o">=</span> <span class="n">spotify2000_df</span><span class="p">[</span><span class="s1">&#39;Artist&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()[</span><span class="n">spotify2000_df</span><span class="p">[</span><span class="s1">&#39;Artist&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="mi">10</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">))</span>
-<span class="n">arist_bar_plot</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Top Arist Frequency in Dataset&#39;</span><span class="p">)</span>
-<span class="n">arist_bar_plot</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Arist&quot;</span><span class="p">)</span>
-<span class="n">arist_bar_plot</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Frequency&quot;</span><span class="p">)</span>
-
-<span class="n">rects</span> <span class="o">=</span> <span class="n">arist_bar_plot</span><span class="o">.</span><span class="n">patches</span>
-
-<span class="c1"># labeling the counts per https://stackoverflow.com/questions/28931224/adding-value-labels-on-a-matplotlib-bar-chart</span>
-<span class="k">for</span> <span class="n">rect</span><span class="p">,</span> <span class="n">label</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">rects</span><span class="p">,</span> <span class="n">top_artists_values</span><span class="p">):</span>
-    <span class="n">height</span> <span class="o">=</span> <span class="n">rect</span><span class="o">.</span><span class="n">get_height</span><span class="p">()</span>
-    <span class="n">arist_bar_plot</span><span class="o">.</span><span class="n">text</span><span class="p">(</span>
-        <span class="n">rect</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span> <span class="o">+</span> <span class="n">rect</span><span class="o">.</span><span class="n">get_width</span><span class="p">()</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">ha</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span> <span class="n">va</span><span class="o">=</span><span class="s2">&quot;bottom&quot;</span>
-    <span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -857,72 +963,9 @@ Additionally, I may consider using the Spotify API to collect more data on each 
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">artist_dfs</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">artist</span> <span class="ow">in</span> <span class="n">top_artists</span><span class="p">:</span>
-    <span class="n">artist_dfs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">spotify2000_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">spotify2000_df</span><span class="p">[</span><span class="s1">&#39;Artist&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">artist</span><span class="p">])</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">plot_max_correlations</span><span class="p">(</span><span class="n">top_column</span><span class="p">,</span> <span class="n">value</span><span class="p">,</span> <span class="n">df</span><span class="p">,</span> <span class="n">title</span><span class="p">):</span>
-    <span class="n">topColumn_pop</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="n">top_column</span><span class="p">:</span> <span class="n">df</span><span class="p">[</span><span class="n">top_column</span><span class="p">],</span>
-                 <span class="s1">&#39;popularity&#39;</span><span class="p">:</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Popularity&#39;</span><span class="p">]},</span>
-                 <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="n">top_column</span><span class="p">,</span> <span class="s1">&#39;popularity&#39;</span><span class="p">])</span>
-    <span class="n">label_string</span> <span class="o">=</span> <span class="s1">&#39;corr = &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
-    <span class="n">artist_corr_plot</span> <span class="o">=</span> <span class="n">topColumn_pop</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;scatter&#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">top_column</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;popularity&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">label_string</span><span class="p">)</span>
-    <span class="n">artist_corr_plot</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">title</span> <span class="o">+</span> <span class="s1">&#39; - &#39;</span> <span class="o">+</span> <span class="n">top_column</span> <span class="o">+</span> <span class="s1">&#39; correlation with popularity plot&#39;</span><span class="p">)</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">topColumn_pop</span><span class="p">[[</span><span class="n">top_column</span><span class="p">]]</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="n">topColumn_pop</span><span class="p">[</span><span class="s1">&#39;popularity&#39;</span><span class="p">]</span>
-    <span class="n">reg</span> <span class="o">=</span> <span class="n">LinearRegression</span><span class="p">()</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-    <span class="n">ytrain</span> <span class="o">=</span> <span class="n">reg</span><span class="o">.</span><span class="n">intercept_</span> <span class="o">+</span> <span class="n">reg</span><span class="o">.</span><span class="n">coef_</span> <span class="o">*</span> <span class="n">x</span>
-    <span class="n">artist_corr_plot</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span><span class="s1">&#39;ro&#39;</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">ytrain</span><span class="p">,</span><span class="s1">&#39;b-&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># only plotting the correlations &gt; 0.5</span>
-
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">artist_df</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">artist_dfs</span><span class="p">):</span>
-    <span class="n">corr_matrix</span> <span class="o">=</span> <span class="n">artist_df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
-    <span class="n">top_corr_value</span> <span class="o">=</span> <span class="n">corr_matrix</span><span class="p">[[</span><span class="s1">&#39;Popularity&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Popularity&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">top_corr_column</span> <span class="o">=</span> <span class="n">corr_matrix</span><span class="p">[[</span><span class="s1">&#39;Popularity&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Popularity&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-    <span class="k">if</span> <span class="n">top_corr_value</span> <span class="o">&gt;</span> <span class="mf">0.5</span> <span class="ow">and</span> <span class="n">top_corr_column</span> <span class="o">!=</span> <span class="s1">&#39;Year&#39;</span> <span class="ow">and</span> <span class="n">top_corr_column</span> <span class="o">!=</span> <span class="s1">&#39;Index&#39;</span> <span class="ow">and</span> <span class="n">top_corr_column</span> <span class="o">!=</span> <span class="s1">&#39;Loudness (dB)&#39;</span><span class="p">:</span>
-        <span class="n">plot_max_correlations</span><span class="p">(</span><span class="n">top_corr_column</span><span class="p">,</span> <span class="n">top_corr_value</span><span class="p">,</span> <span class="n">artist_df</span><span class="p">,</span> <span class="n">top_artists</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-    
-</pre></div>
-
-    </div>
-</div>
-</div>
-
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
+        <p>
 <div class="output_wrapper">
 <div class="output">
 
@@ -1049,7 +1092,8 @@ Additionally, I may consider using the Spotify API to collect more data on each 
 
 </div>
 </div>
-
+</p>
+    </details>
 </div>
     
 
@@ -1082,85 +1126,9 @@ Additionally, I may consider using the Spotify API to collect more data on each 
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">indie_df</span> <span class="o">=</span> <span class="n">spotify2000_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">spotify2000_df</span><span class="p">[</span><span class="s1">&#39;Top Genre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;indie&#39;</span><span class="p">)]</span>
-<span class="n">pop_df</span> <span class="o">=</span> <span class="n">spotify2000_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">spotify2000_df</span><span class="p">[</span><span class="s1">&#39;Top Genre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;pop&#39;</span><span class="p">)]</span>
-<span class="n">metal_df</span> <span class="o">=</span> <span class="n">spotify2000_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">spotify2000_df</span><span class="p">[</span><span class="s1">&#39;Top Genre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;metal&#39;</span><span class="p">)]</span>
-<span class="n">soul_df</span> <span class="o">=</span> <span class="n">spotify2000_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">spotify2000_df</span><span class="p">[</span><span class="s1">&#39;Top Genre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;soul&#39;</span><span class="p">)]</span>
-<span class="n">hiphop_df</span> <span class="o">=</span> <span class="n">spotify2000_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">spotify2000_df</span><span class="p">[</span><span class="s1">&#39;Top Genre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;hip hop&#39;</span><span class="p">)]</span>
-<span class="n">rock_df</span> <span class="o">=</span> <span class="n">spotify2000_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">spotify2000_df</span><span class="p">[</span><span class="s1">&#39;Top Genre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">contains</span><span class="p">(</span><span class="s1">&#39;rock&#39;</span><span class="p">)]</span>
-
-<span class="c1"># creating a list for easier iteration</span>
-<span class="n">genre_df_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">indie_df</span><span class="p">,</span> <span class="n">pop_df</span><span class="p">,</span> <span class="n">metal_df</span><span class="p">,</span> <span class="n">soul_df</span><span class="p">,</span> <span class="n">hiphop_df</span><span class="p">,</span> <span class="n">rock_df</span><span class="p">]</span>
-<span class="n">genre_name_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;indie&quot;</span><span class="p">,</span> <span class="s2">&quot;pop&quot;</span><span class="p">,</span> <span class="s2">&quot;metal&quot;</span><span class="p">,</span> <span class="s2">&quot;soul&quot;</span><span class="p">,</span> <span class="s2">&quot;hiphop&quot;</span><span class="p">,</span> <span class="s2">&quot;rock&quot;</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">genre_popularities</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-                <span class="s1">&#39;indie&#39;</span><span class="p">:</span> <span class="n">indie_df</span><span class="p">[</span><span class="s1">&#39;Popularity&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;pop&#39;</span><span class="p">:</span> <span class="n">pop_df</span><span class="p">[</span><span class="s1">&#39;Popularity&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;metal&#39;</span><span class="p">:</span> <span class="n">metal_df</span><span class="p">[</span><span class="s1">&#39;Popularity&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;soul&#39;</span><span class="p">:</span> <span class="n">soul_df</span><span class="p">[</span><span class="s1">&#39;Popularity&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;hiphop&#39;</span><span class="p">:</span> <span class="n">hiphop_df</span><span class="p">[</span><span class="s1">&#39;Popularity&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;rock&#39;</span><span class="p">:</span> <span class="n">rock_df</span><span class="p">[</span><span class="s1">&#39;Popularity&#39;</span><span class="p">]},</span>
-                <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;indie&#39;</span><span class="p">,</span> <span class="s1">&#39;pop&#39;</span><span class="p">,</span> <span class="s1">&#39;metal&#39;</span><span class="p">,</span> <span class="s1">&#39;soul&#39;</span><span class="p">,</span> <span class="s1">&#39;hiphop&#39;</span><span class="p">,</span> <span class="s1">&#39;rock&#39;</span><span class="p">])</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">genre_boxplot</span> <span class="o">=</span> <span class="n">genre_popularities</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;indie&#39;</span><span class="p">,</span> <span class="s1">&#39;pop&#39;</span><span class="p">,</span> <span class="s1">&#39;metal&#39;</span><span class="p">,</span> <span class="s1">&#39;soul&#39;</span><span class="p">,</span> <span class="s1">&#39;hiphop&#39;</span><span class="p">,</span> <span class="s1">&#39;rock&#39;</span><span class="p">],</span>
-                          <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">),</span>
-                          <span class="n">showmeans</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-<span class="n">genre_boxplot</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Boxplots of Genre Popularity&#39;</span><span class="p">)</span>
-<span class="n">genre_boxplot</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Genres&quot;</span><span class="p">)</span>
-<span class="n">genre_boxplot</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Popularity&quot;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>Text(0, 0.5, &#39;Popularity&#39;)</pre>
-</div>
-
-</div>
 
 <div class="output_area">
 
@@ -1196,22 +1164,9 @@ Additionally, I may consider using the Spotify API to collect more data on each 
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># plotting the max correlation graphs</span>
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">genre_df</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">genre_df_list</span><span class="p">):</span>
-    <span class="n">corr_matrix</span> <span class="o">=</span> <span class="n">genre_df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
-    <span class="n">top_corr_value</span> <span class="o">=</span> <span class="n">corr_matrix</span><span class="p">[[</span><span class="s1">&#39;Popularity&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Popularity&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">top_corr_column</span> <span class="o">=</span> <span class="n">corr_matrix</span><span class="p">[[</span><span class="s1">&#39;Popularity&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Popularity&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-    <span class="n">plot_max_correlations</span><span class="p">(</span><span class="n">top_corr_column</span><span class="p">,</span> <span class="n">top_corr_value</span><span class="p">,</span> <span class="n">genre_df</span><span class="p">,</span> <span class="n">genre_name_list</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
+        <p>
 <div class="output_wrapper">
 <div class="output">
 
@@ -1283,7 +1238,8 @@ Additionally, I may consider using the Spotify API to collect more data on each 
 
 </div>
 </div>
-
+</p>
+    </details>
 </div>
     
 
@@ -1311,62 +1267,6 @@ Additionally, I may consider using the Spotify API to collect more data on each 
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># returns a list of those averages to be used for radar charts</span>
-<span class="k">def</span> <span class="nf">find_avgs</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
-    <span class="n">categories</span> <span class="o">=</span><span class="p">[</span><span class="s2">&quot;Energy&quot;</span><span class="p">,</span> <span class="s2">&quot;Danceability&quot;</span><span class="p">,</span> <span class="s2">&quot;Liveness&quot;</span><span class="p">,</span> <span class="s2">&quot;Valence&quot;</span><span class="p">,</span> <span class="s2">&quot;Acousticness&quot;</span><span class="p">,</span> <span class="s2">&quot;Speechiness&quot;</span><span class="p">]</span>
-    <span class="n">values</span> <span class="o">=</span> <span class="p">[]</span>
-    <span class="k">for</span> <span class="n">category</span> <span class="ow">in</span> <span class="n">categories</span><span class="p">:</span>
-        <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">category</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">())</span>
-    <span class="k">return</span> <span class="n">values</span>
-
-<span class="c1"># a list of list of dataframe column averages</span>
-<span class="n">values</span> <span class="o">=</span> <span class="p">[]</span>
-
-<span class="c1"># loop through each genre dataframe to append a list of column averages into values</span>
-<span class="k">for</span> <span class="n">genre_df</span> <span class="ow">in</span> <span class="n">genre_df_list</span><span class="p">:</span>
-    <span class="n">values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">find_avgs</span><span class="p">(</span><span class="n">genre_df</span><span class="p">))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">categories</span> <span class="o">=</span><span class="p">[</span><span class="s2">&quot;Energy&quot;</span><span class="p">,</span> <span class="s2">&quot;Danceability&quot;</span><span class="p">,</span> <span class="s2">&quot;Liveness&quot;</span><span class="p">,</span> <span class="s2">&quot;Valence&quot;</span><span class="p">,</span> <span class="s2">&quot;Acousticness&quot;</span><span class="p">,</span> <span class="s2">&quot;Speechiness&quot;</span><span class="p">]</span>
-<span class="n">label_loc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">categories</span><span class="p">),</span> <span class="n">endpoint</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">polar</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-<span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;orange&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;purple&#39;</span><span class="p">,</span> <span class="s1">&#39;brown&#39;</span><span class="p">]</span>
-
-<span class="c1"># loop through the values to plot into radar chart</span>
-<span class="k">for</span> <span class="n">df_index</span><span class="p">,</span> <span class="n">genre_values</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">values</span><span class="p">):</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">label_loc</span><span class="p">,</span> <span class="n">genre_values</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="p">(</span><span class="n">genre_name_list</span><span class="p">[</span><span class="n">df_index</span><span class="p">]))</span>
-    <span class="n">plt</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">label_loc</span><span class="p">,</span> <span class="n">genre_values</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.25</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="n">colors</span><span class="p">[</span><span class="n">df_index</span><span class="p">])</span>
-
-<span class="n">lines</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">thetagrids</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">label_loc</span><span class="p">),</span> <span class="n">labels</span><span class="o">=</span><span class="n">categories</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Genre category comparison&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -1417,116 +1317,9 @@ Additionally, I may consider using the Spotify API to collect more data on each 
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># splitting the dataset into decades</span>
-
-<span class="c1"># create a sorted dataframe based on year</span>
-<span class="n">year_sorted_df</span> <span class="o">=</span> <span class="n">spotify2000_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-<span class="c1"># creating a dictionary with </span>
-    <span class="c1"># - key = decade name </span>
-    <span class="c1"># - value = decade dataframe</span>
-    
-<span class="n">decades_df</span> <span class="o">=</span> <span class="p">{}</span>
-
-<span class="c1"># initialize the start value</span>
-<span class="n">year_range</span> <span class="o">=</span> <span class="mi">1950</span>
-
-<span class="c1"># loop through each decade until finished with dataset year upper limit</span>
-<span class="k">while</span> <span class="n">year_range</span> <span class="o">!=</span> <span class="mi">2020</span><span class="p">:</span>
-    <span class="c1"># create the key based on the decade</span>
-    <span class="n">df_name</span> <span class="o">=</span> <span class="s1">&#39;decade_&#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">year_range</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39;s&#39;</span>
-    <span class="c1"># create the value / dataframe by locating the range of rows in between the decade values</span>
-    <span class="n">df</span> <span class="o">=</span> <span class="n">year_sorted_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">year_sorted_df</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">year_range</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">year_sorted_df</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">year_range</span><span class="o">+</span><span class="mi">9</span><span class="p">)]</span>
-    <span class="n">decades_df</span><span class="p">[</span><span class="n">df_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span>
-    <span class="n">year_range</span> <span class="o">+=</span> <span class="mi">10</span>
-
-<span class="n">decades_df</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>dict_keys([&#39;decade_1950s&#39;, &#39;decade_1960s&#39;, &#39;decade_1970s&#39;, &#39;decade_1980s&#39;, &#39;decade_1990s&#39;, &#39;decade_2000s&#39;, &#39;decade_2010s&#39;])</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">decades_popularities</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
-                <span class="s1">&#39;decade_1950s&#39;</span><span class="p">:</span> <span class="n">decades_df</span><span class="p">[</span><span class="s1">&#39;decade_1950s&#39;</span><span class="p">][</span><span class="s1">&#39;Popularity&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;decade_1960s&#39;</span><span class="p">:</span> <span class="n">decades_df</span><span class="p">[</span><span class="s1">&#39;decade_1960s&#39;</span><span class="p">][</span><span class="s1">&#39;Popularity&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;decade_1970s&#39;</span><span class="p">:</span> <span class="n">decades_df</span><span class="p">[</span><span class="s1">&#39;decade_1970s&#39;</span><span class="p">][</span><span class="s1">&#39;Popularity&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;decade_1980s&#39;</span><span class="p">:</span> <span class="n">decades_df</span><span class="p">[</span><span class="s1">&#39;decade_1980s&#39;</span><span class="p">][</span><span class="s1">&#39;Popularity&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;decade_1990s&#39;</span><span class="p">:</span> <span class="n">decades_df</span><span class="p">[</span><span class="s1">&#39;decade_1990s&#39;</span><span class="p">][</span><span class="s1">&#39;Popularity&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;decade_2000s&#39;</span><span class="p">:</span> <span class="n">decades_df</span><span class="p">[</span><span class="s1">&#39;decade_2000s&#39;</span><span class="p">][</span><span class="s1">&#39;Popularity&#39;</span><span class="p">],</span>
-                <span class="s1">&#39;decade_2010s&#39;</span><span class="p">:</span> <span class="n">decades_df</span><span class="p">[</span><span class="s1">&#39;decade_2010s&#39;</span><span class="p">][</span><span class="s1">&#39;Popularity&#39;</span><span class="p">]},</span>
-                <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;decade_1950s&#39;</span><span class="p">,</span> <span class="s1">&#39;decade_1960s&#39;</span><span class="p">,</span> <span class="s1">&#39;decade_1970s&#39;</span><span class="p">,</span> <span class="s1">&#39;decade_1980s&#39;</span><span class="p">,</span> <span class="s1">&#39;decade_1990s&#39;</span><span class="p">,</span> <span class="s1">&#39;decade_2000s&#39;</span><span class="p">,</span> <span class="s1">&#39;decade_2010s&#39;</span><span class="p">])</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">decades_boxplot</span> <span class="o">=</span> <span class="n">decades_popularities</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">column</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;decade_1950s&#39;</span><span class="p">,</span> <span class="s1">&#39;decade_1960s&#39;</span><span class="p">,</span> <span class="s1">&#39;decade_1970s&#39;</span><span class="p">,</span> <span class="s1">&#39;decade_1980s&#39;</span><span class="p">,</span> <span class="s1">&#39;decade_1990s&#39;</span><span class="p">,</span> <span class="s1">&#39;decade_2000s&#39;</span><span class="p">,</span> <span class="s1">&#39;decade_2010s&#39;</span><span class="p">],</span>
-                          <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">),</span>
-                          <span class="n">showmeans</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-
-<span class="n">decades_boxplot</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Boxplots of Decade Popularity&#39;</span><span class="p">)</span>
-<span class="n">decades_boxplot</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;Decades&quot;</span><span class="p">)</span>
-<span class="n">decades_boxplot</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;Popularity&quot;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>Text(0, 0.5, &#39;Popularity&#39;)</pre>
-</div>
-
-</div>
 
 <div class="output_area">
 
@@ -1561,22 +1354,9 @@ Additionally, I may consider using the Spotify API to collect more data on each 
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># plotting the max correlation graphs</span>
-<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">decade</span><span class="p">,</span> <span class="n">decade_df</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">decades_df</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
-    <span class="n">corr_matrix</span> <span class="o">=</span> <span class="n">decade_df</span><span class="o">.</span><span class="n">corr</span><span class="p">()</span>
-    <span class="n">top_corr_value</span> <span class="o">=</span> <span class="n">corr_matrix</span><span class="p">[[</span><span class="s1">&#39;Popularity&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Popularity&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
-    <span class="n">top_corr_column</span> <span class="o">=</span> <span class="n">corr_matrix</span><span class="p">[[</span><span class="s1">&#39;Popularity&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Popularity&#39;</span><span class="p">,</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
-    <span class="n">plot_max_correlations</span><span class="p">(</span><span class="n">top_corr_column</span><span class="p">,</span> <span class="n">top_corr_value</span><span class="p">,</span> <span class="n">decade_df</span><span class="p">,</span> <span class="n">decade</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Output" data-close="Show Output"></summary>
+        <p>
 <div class="output_wrapper">
 <div class="output">
 
@@ -1659,7 +1439,8 @@ Additionally, I may consider using the Spotify API to collect more data on each 
 
 </div>
 </div>
-
+</p>
+    </details>
 </div>
     
 
@@ -1689,74 +1470,6 @@ Additionally, I may consider using the Spotify API to collect more data on each 
 </div>
 </div>
 </div>
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">all_other_num</span> <span class="o">=</span> <span class="n">spotify2000_df</span><span class="o">.</span><span class="n">count</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="mi">100</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">top100_df</span> <span class="o">=</span> <span class="n">spotify2000_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Popularity&#39;</span><span class="p">,</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">top100_boxplot</span> <span class="o">=</span> <span class="n">top100_df</span><span class="p">[[</span><span class="s2">&quot;Energy&quot;</span><span class="p">,</span> <span class="s2">&quot;Danceability&quot;</span><span class="p">,</span> <span class="s2">&quot;Liveness&quot;</span><span class="p">,</span> <span class="s2">&quot;Valence&quot;</span><span class="p">,</span> <span class="s2">&quot;Acousticness&quot;</span><span class="p">,</span> <span class="s2">&quot;Speechiness&quot;</span><span class="p">]]</span><span class="o">.</span><span class="n">boxplot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_png output_subarea ">
-<img src="data:image/png;base64,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
-" />
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-    
-
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>It's tough to see if the group of top songs have shared similarities, as there are wide ranges for a lot of a majority of these columns. Why don't we compare with the other songs in the dataset?</p>
@@ -1773,73 +1486,6 @@ Additionally, I may consider using the Spotify API to collect more data on each 
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">bottom100_df</span> <span class="o">=</span> <span class="n">spotify2000_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Popularity&#39;</span><span class="p">,</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">all_others_df</span> <span class="o">=</span> <span class="n">spotify2000_df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s1">&#39;Popularity&#39;</span><span class="p">,</span> <span class="n">ascending</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">100</span><span class="p">:</span><span class="n">all_other_num</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    
-
-    
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">categories</span> <span class="o">=</span><span class="p">[</span><span class="s2">&quot;Energy&quot;</span><span class="p">,</span> <span class="s2">&quot;Danceability&quot;</span><span class="p">,</span> <span class="s2">&quot;Liveness&quot;</span><span class="p">,</span> <span class="s2">&quot;Valence&quot;</span><span class="p">,</span> <span class="s2">&quot;Acousticness&quot;</span><span class="p">,</span> <span class="s2">&quot;Speechiness&quot;</span><span class="p">]</span>
-
-<span class="c1"># get the averages for each dataframe</span>
-<span class="n">top100_values</span> <span class="o">=</span> <span class="n">find_avgs</span><span class="p">(</span><span class="n">top100_df</span><span class="p">)</span>
-<span class="n">allsong_values</span> <span class="o">=</span> <span class="n">find_avgs</span><span class="p">(</span><span class="n">all_others_df</span><span class="p">)</span>
-<span class="n">bottom100_values</span> <span class="o">=</span> <span class="n">find_avgs</span><span class="p">(</span><span class="n">bottom100_df</span><span class="p">)</span>
-
-<span class="n">label_loc</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">categories</span><span class="p">),</span> <span class="n">endpoint</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">))</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="n">polar</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">label_loc</span><span class="p">,</span> <span class="n">top100_values</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Top 100 Popular Songs&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">label_loc</span><span class="p">,</span> <span class="n">allsong_values</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;All Other Songs&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">label_loc</span><span class="p">,</span> <span class="n">bottom100_values</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Bottom 100 Songs&#39;</span><span class="p">)</span>
-
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Most, Least, &amp; Other Popular Comparisons&#39;</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">label_loc</span><span class="p">,</span> <span class="n">top100_values</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;blue&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">label_loc</span><span class="p">,</span> <span class="n">allsong_values</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;orange&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">label_loc</span><span class="p">,</span> <span class="n">bottom100_values</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">facecolor</span><span class="o">=</span><span class="s1">&#39;green&#39;</span><span class="p">)</span>
-
-
-<span class="n">lines</span><span class="p">,</span> <span class="n">labels</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">thetagrids</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">degrees</span><span class="p">(</span><span class="n">label_loc</span><span class="p">),</span> <span class="n">labels</span><span class="o">=</span><span class="n">categories</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;lower right&#39;</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
 
 <div class="output_wrapper">
 <div class="output">
@@ -1877,7 +1523,9 @@ Additionally, I may consider using the Spotify API to collect more data on each 
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<details class="description" open="">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
@@ -1888,7 +1536,8 @@ Additionally, I may consider using the Spotify API to collect more data on each 
     </div>
 </div>
 </div>
-
+</p>
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -1978,7 +1627,9 @@ Additionally, I may consider using the Spotify API to collect more data on each 
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<details class="description" open="">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
@@ -1989,7 +1640,8 @@ Additionally, I may consider using the Spotify API to collect more data on each 
     </div>
 </div>
 </div>
-
+</p>
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -2079,7 +1731,9 @@ Additionally, I may consider using the Spotify API to collect more data on each 
     
     
 <div class="cell border-box-sizing code_cell rendered">
-<div class="input">
+<details class="description" open="">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p><div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
@@ -2090,7 +1744,8 @@ Additionally, I may consider using the Spotify API to collect more data on each 
     </div>
 </div>
 </div>
-
+</p>
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
@@ -2203,16 +1858,6 @@ Additionally, I may consider using the Spotify API to collect more data on each 
 
 <div class="output_wrapper">
 <div class="output">
-
-<div class="output_area">
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>Text(0, 0.5, &#39;Polarity&#39;)</pre>
-</div>
-
-</div>
 
 <div class="output_area">
 
